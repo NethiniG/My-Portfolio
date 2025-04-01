@@ -1,0 +1,800 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", serif;
+    color: #ffffff;
+}
+
+header {
+    background-color: #000;
+    padding-top: 10px; 
+    padding-left: 70px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    position: fixed; 
+    width: 100%;
+    z-index: 1000; 
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+header nav ul li a {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600; 
+    color: #d8d4d4;
+    text-decoration: none;
+    font-size: 12px;
+}
+nav ul li a:hover {
+    color: #5f7dff; 
+    transition: color 0.3s;
+}
+.contact {
+    font-size: 0.9em;
+    color: #ffffff;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url('mainpage.jpeg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+h1 span {
+    color: #ffffff; 
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100; 
+    font-size: 15px;
+    letter-spacing: 5px; 
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.buttons .btn {
+    display: inline-block;
+    padding: 10px 50px;
+    margin: 10px;
+    color: #ffffff; 
+    border: 1px solid #ffffff; 
+    background-color: transparent; 
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.buttons .btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(1px);
+    color: #ffffff;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.social {
+    position: absolute;
+    bottom: 70px; 
+    display: flex;
+    gap: 20px;
+}
+
+.social a {
+    color: #ffffff; 
+    font-size: 1.5em; 
+    transition: color 0.3s; 
+}
+
+.social a:hover {
+    color: #5f7dff;
+}
+
+/* About.html*/
+
+.about{
+    width: 100%;
+    padding: 78px 0px;
+    background-color: #191919;
+    background-image: url('Colorful\ Geometric\ Creative\ Portfolio\ Presentation\ \(1\).png');
+}
+
+.about img{
+    height: auto;
+    width: 300px;
+    margin-right: 60px;
+}
+
+.about-text{
+    width: 550px;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h1{
+    color: white;
+    font-family: "Inter", serif;
+    font-size: 55px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5{
+    color: #1bc5ce;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.about-text p{
+    color: white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 15px;
+    margin-bottom: 45px;
+    font-family: "Inter", serif;
+
+}
+
+.text-box {
+    background-color: #000102; 
+    padding: 30px; 
+    max-width: 600px; 
+    margin: 20px auto; 
+    color: #ffffff; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    position: relative; 
+
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.text-box::before, .text-box::after {
+    content: '';
+    position: absolute;
+    background-color: #1bc5ce; 
+}
+
+.text-box::before {
+    height: 100%;
+    width: 4px;
+    top: 0;
+    left: -10px; 
+}
+
+.text-box::after {
+    width: 100%;
+    height: 4px;
+    bottom: -10px; 
+    left: 0;
+}
+
+.about-text .text-box button{
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    font-size: 17px;
+    padding: 10px 40px;
+    margin: 10px;
+    color: #ffffff; 
+    border: 1px solid #1bc5ce; 
+    background-color: transparent; 
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.about-text .text-box button:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(1px);
+    color: #ffffff;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Contact Section Styles */
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('aboutpic.png');
+    background-size: cover;
+    background-position: center; 
+    font-family: "Inter", serif;
+}
+
+
+
+.contact .content h2 {
+    margin-top: 40px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.container .contactInfo {
+    width:50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    margin-right: 20px;
+    display: flex ;
+    
+}
+
+.container .contactInfo .box .icon {
+    background: #000000; 
+    color: #ffffff; 
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.container .contactInfo .box .text h3{
+    color: #00bcd4;
+}
+
+.container .contactInfo .box .text p {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-family: "Inter", serif;
+    font-weight: 800px;
+
+}
+
+.contactForm {
+    width: 48%;
+    padding: 20px;
+    background: rgba(243, 241, 241, 0.8);
+    border-radius: 10px; 
+    color: #3e3030; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+
+.contactForm .inputBox{
+    position:relative ;
+    width: 100%;
+    margin-top: 10px;
+    color: black;
+
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width:100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding:5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: #0a3e4b;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    font-size: 17px;
+    padding: 10px 40px;
+    margin: 10px;
+    color: #ffffff; 
+    border: 1px solid #1bc5ce; 
+    background-color: transparent; 
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer; 
+}
+
+.contactForm .inputBox input[type="submit"]:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(1px);
+    color: #ffffff;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.contactForm .sendButton {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    font-size: 17px;
+    padding: 10px 40px;
+    margin-top: 20px;
+    color: #13c7e3; 
+    border: 1px solid #1bc5ce; 
+    background-color: #000000; 
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.contactForm .sendButton:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: #1bc5ce; 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+input:valid, textarea:valid {
+    border: 2px solid green; 
+}
+
+
+input:invalid, textarea:invalid {
+    border: 2px solid red; 
+}
+
+
+input:required:invalid, textarea:required:invalid {
+    background-color: #ffcccc; 
+}
+
+
+input:required:valid, textarea:required:valid {
+    background-color: #ccffcc; 
+}
+
+/* Portfolio Section Styles */
+.portfolio {
+    padding: 50px 100px;
+    background-color: #191919;
+    color: #ffffff;
+    text-align: center;
+    background-image: url('portfoliopic.png');
+}
+
+.portfolio .content h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: "Inter", serif;
+    
+}
+
+.portfolio .content p {
+    font-size: 16px;
+    color: #e0e0e0;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/* Projects Showcase */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.portfolio h2 {
+    font-size: 2.5em; 
+    color: #ffffff; 
+    margin-top: 30px;
+    margin-bottom: 10px; 
+    font-family: "Inter", serif;
+    text-shadow:0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.portfolio p {
+    font-size: 40px; 
+    color: #ffffff; 
+    font-weight: 400;
+    line-height: 1.5; 
+    margin-bottom: 30px; 
+    letter-spacing: 1px;
+    text-shadow:0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.project-item {
+    background-color: rgba(0, 0, 0, 0.83);
+    width: 300px;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+.project-item time {
+    display: block;             
+    font-size: 0.9em;           
+    color: #cbcece;               
+    margin-top: 5px;            
+    font-weight: bold; 
+    text-align: right;        
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-item h3 {
+    font-size: 18px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: "Inter", serif;
+    text-shadow:0 4px 8px rgba(0, 0, 0, 0.4);
+    font-weight: 500;
+}
+
+.project-item p {
+    color: #d6d1d1;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: "Inter", serif;
+    text-shadow:0 4px 8px rgba(0, 0, 0, 0.955);
+}
+
+.project-item .project-link {
+    text-decoration: none;
+    color: #5f7dff;
+    font-weight: bold;
+}
+
+.project-item .project-link:hover {
+    color: #1bc5ce;
+}
+
+/* Skills Section */
+.skills {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.skills h2 {
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    color: #bbbbbb;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 5px 0;
+    text-shadow:0 4px 8px rgba(0, 0, 0, 0.955);
+}
+
+
+/*blog section*/
+
+.blog {
+    background-color: #f4f4f4; 
+    padding: 40px 20px; 
+    background-image: url('Colorful\ Geometric\ Creative\ Portfolio\ Presentation\ \(1\).png');
+}
+
+.blog .content {
+    text-align: center; 
+    margin-top: 30px;
+    margin-bottom: 30px; 
+}
+
+.blog h2 {
+    font-size: 2.5em; 
+    color: #ddd5d5; 
+    margin-top: 40px;
+    
+    font-family: "Inter", serif;
+}
+
+.blog-posts {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.post {
+    background-color: #000000; 
+    width: 100%; 
+    max-width: 600px; 
+    padding: 20px; 
+    margin: 20px 0; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.post h3 {
+    font-size: 25px; 
+    color: #38b1c1; 
+    margin-bottom: 10px;
+    font-family: "Inter", serif;
+}
+
+.blog-posts p {
+    font-size: 12px; 
+    color: #d2cdcd; 
+    font-family: "Inter", serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+
+.post .date {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 10px; 
+    font-weight: 300;
+}
+
+@media (max-width: 600px) {
+    header nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        gap: 20px; /* Adjust gap for mobile */
+    }
+
+    .hero h1 {
+        font-size: 2.5em; /* Smaller heading */
+    }
+
+    .hero p {
+        font-size: 12px; /* Smaller paragraph text */
+    }
+
+    .about img {
+        width: 100%; /* Make image responsive */
+        margin-right: 0; /* Remove margin */
+    }
+
+    .about-text {
+        width: 100%; /* Make text section full width */
+        text-align: center; /* Center align text */
+    }
+
+    .container {
+        flex-direction: column; /* Stack contact info and form vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .contactForm {
+        width: 90%; /* Make contact form full width */
+    }
+
+    .portfolio .content h2 {
+        font-size: 28px; /* Smaller heading for portfolio */
+    }
+
+    .portfolio .content p {
+        font-size: 14px; /* Smaller paragraph text */
+    }
+
+    .project-item {
+        width: 100%; /* Full width for project items */
+    }
+
+    .skills h2 {
+        font-size: 24px; /* Smaller heading for skills */
+    }
+
+    .blog h2 {
+        font-size: 2em; /* Smaller heading for blog */
+    }
+
+    .post {
+        width: 90%; /* Make blog post full width */
+    }
+}
+
+/* Tablets (between 601px and 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    header nav ul {
+        gap: 30px; /* Adjust gap for tablet */
+    }
+
+    .hero h1 {
+        font-size: 3em; /* Medium heading */
+    }
+
+    .hero p {
+        font-size: 14px; /* Medium paragraph text */
+    }
+
+    .about img {
+        width: 80%; /* Adjust image size */
+    }
+
+    .container {
+        flex-direction: row; /* Use row layout for contact info and form */
+    }
+
+    .contactForm {
+        width: 80%; /* Adjust contact form width */
+    }
+
+    .portfolio .content h2 {
+        font-size: 32px; /* Medium heading for portfolio */
+    }
+
+    .portfolio .content p {
+        font-size: 15px; /* Medium paragraph text */
+    }
+
+    .project-item {
+        width: 45%; /* Adjust project item width for tablets */
+    }
+
+    .skills h2 {
+        font-size: 26px; /* Medium heading for skills */
+    }
+
+    .blog h2 {
+        font-size: 2.2em; /* Medium heading for blog */
+    }
+
+    .post {
+        width: 80%; /* Adjust blog post width */
+    }
+}
+
+/* Desktop (900px and above) */
+@media (min-width: 901px) {
+    header nav ul {
+        gap: 40px; /* Default gap for desktop */
+    }
+
+    .hero h1 {
+        font-size: 4em; /* Large heading */
+    }
+
+    .hero p {
+        font-size: 15px; /* Default paragraph text */
+    }
+
+    .about img {
+        width: 300px; /* Default image size */
+    }
+
+    .portfolio .content h2 {
+        font-size: 40px; /* Default heading for portfolio */
+    }
+
+    .portfolio .content p {
+        font-size: 16px; /* Default paragraph text */
+    }
+
+    .project-item {
+        width: 300px; /* Default project item width */
+    }
+
+    .skills h2 {
+        font-size: 28px; /* Default heading for skills */
+    }
+
+    .blog h2 {
+        font-size: 2.5em; /* Default heading for blog */
+    }
+
+    .post {
+        width: 600px; /* Default blog post width */
+    }
+}
