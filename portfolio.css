@@ -58,8 +58,8 @@ header {
     width: 100%;
     z-index: 100;
     transition: all 0.3s ease;
-    backdrop-filter: blur(10px);
-    background-color: rgba(10, 10, 10, 0.7);
+    backdrop-filter: blur(9px);
+    background-color: rgba(10, 10, 10, 0.313);
 }
 
 header nav ul {
