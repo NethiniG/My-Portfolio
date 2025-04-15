@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Nethini Galagama</title>
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Grid Overlay -->
+    <div class="grid-overlay"></div>
+
     <header>
         <!-- Navigation Links -->
         <nav>
@@ -28,48 +32,250 @@
     </header>
 
     <!-- Portfolio Section -->
-    <section class="portfolio">
-        <div class="content">
-            <h2>My Portfolio</h2>
-            <p>Here's a selection of my recent work, projects, and skills.</p>
+    <section class="portfolio" id="projects">
+        <div class="portfolio-header">
+            <h2>My Projects</h2>
+            <p>A collection of my work and explorations</p>
         </div>
 
-        <!-- Projects Showcase -->
-        <div class="projects">
-            <!-- Project Item 1 -->
-            <div class="project-item">
-                <img src="project1.jpg" alt="Project 1">
-                <h3>Wellness Journey Website</h3>
-                <p>A personalized website offering tools and resources for holistic health, guiding users in fitness, nutrition, mindfulness, and mental well-being.</p>
-                <time datetime="2024-03-24">March 24, 2024</time>
+        <!-- Projects Container -->
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="image.png" alt="BoardMate Web Application">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="ri-github-fill"></i></a>
+                            <a href="#" class="project-link"><i class="ri-external-link-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>BoardMate Web Application</h3>
+                    <p>A web application designed to assist university students in finding suitable accommodation through a smart and efficient platform. BoardMate leverages technology to match students with housing options based on their preferences.</p>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>JavaScript</span>
+                        <span>Spring Boot</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
             </div>
-            <!-- Project Item 2 -->
-            <div class="project-item">
-                <img src="project2.jpg" alt="Project 2">
-                <h3>Portfolio Website</h3>
-                <p>My personal portfolio website showcases my skills in software engineering, highlighting projects, expertise, and experience in creating impactful, user-focused applications.</p>
-                <time datetime="2024-10-24">October 24, 2024</time>
-            </div>
-            <!-- Project Item 3 -->
-            <div class="project-item">
-                <img src="cmc.jpg" alt="Project 3">
-                <h3>CIMA Mind Challenge 2023</h3>
-                <p>A co-chair of the CIMA Mind Challenge 2023, demonstrating leadership and strategic planning skills that contributed to a successful event, fostering innovation and collaboration among participants.</p>
-                <time datetime="2023-05-15">November 25, 2022</time>
-            </div>           
-        </div>
 
-        <!-- Skills Section -->
-        <div class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML / CSS</li>
-                <li>Python / Java</li>
-                <li>Database Management</li>
-                <li>Mailchimp / Canva / Wondershare Filmora</li>
-                <!-- Add more skills as needed -->
-            </ul>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="estate.png" alt="Real Estate Web Application">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="ri-github-fill"></i></a>
+                            <a href="#" class="project-link"><i class="ri-external-link-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Real Estate Web Application</h3>
+                    <p>An interactive property listing web app that enables users to search, explore, and view detailed property pages with dynamic image carousels and Google Maps integration.</p>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Google Maps API</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="ticketing.jpg" alt="Event Ticketing System">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="ri-github-fill"></i></a>
+                            <a href="#" class="project-link"><i class="ri-external-link-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Event Ticketing System</h3>
+                    <p>A web application using Object-Oriented Programming, multithreading, and synchronization to manage event tickets, vendors, and customers.</p>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Java</span>
+                        <span>OOP</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="project1.jpg" alt="Wellness Website">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="ri-github-fill"></i></a>
+                            <a href="#" class="project-link"><i class="ri-external-link-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>SDG 3 - Health & Wellbeing</h3>
+                    <p>A comprehensive digital platform dedicated to promoting Sustainable Development Goal 3. This website serves as a hub for health-related information, resources, and tools to foster better health practices globally.</p>
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="project2.jpg" alt="Portfolio Website">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="ri-github-fill"></i></a>
+                            <a href="#" class="project-link"><i class="ri-external-link-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>My personal portfolio website showcases my skills in software engineering, highlighting projects, expertise, and experience in creating user-focused applications.</p>
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="plane.jpg" alt="Plane Management System">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="ri-github-fill"></i></a>
+                            <a href="#" class="project-link"><i class="ri-external-link-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Plane Management System</h3>
+                    <p>A Java program to manage and track seat reservations for planes, offering users real-time updates and seat management functionalities.</p>
+                    <div class="tech-stack">
+                        <span>Java</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="section-header">
+            <h2>SKILLS</h2>
+            <p>My technical skills and areas of expertise in design and development.</p>
+        </div>
+        
+        <!-- Skills Filter Buttons -->
+        <div class="skills-filter">
+            <button class="filter-btn active" data-filter="all">All Skills</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="backend">Backend</button>
+        </div>
+        
+        <!-- Skills Grid -->
+        <div class="skills-grid">
+            <!-- Design Skills -->
+            <div class="skill-item" data-category="design">UI/UX Design</div>
+            <div class="skill-item" data-category="design">Canva</div>
+            <div class="skill-item" data-category="design">Project Management</div>
+            <div class="skill-item" data-category="design">Filmora</div>
+            
+            <!-- Frontend Skills -->
+            <div class="skill-item" data-category="frontend">HTML</div>
+            <div class="skill-item" data-category="frontend">CSS</div>
+            <div class="skill-item" data-category="frontend">JavaScript</div>
+            <div class="skill-item" data-category="frontend">React</div>
+            
+            <!-- Backend Skills -->
+            <div class="skill-item" data-category="backend">Java</div>
+            <div class="skill-item" data-category="backend">Spring Boot</div>
+            <div class="skill-item" data-category="backend">MySQL</div>
+            <div class="skill-item" data-category="backend">Python</div>
+        </div>
+    </section>
+    <script>
+        // Skills Filter Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const skillItems = document.querySelectorAll('.skill-item');
+    
+    // Add click event listener to each filter button
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Get the filter value
+            const filterValue = this.getAttribute('data-filter');
+            
+            // Remove active class from all buttons and add to current button
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Show/hide skill items based on filter
+            skillItems.forEach(item => {
+                const category = item.getAttribute('data-category');
+                
+                if (filterValue === 'all') {
+                    // Show all items if "All Skills" is selected
+                    item.style.display = 'block';
+                    
+                    // Add animation
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateY(0)';
+                    }, 50);
+                } else if (category === filterValue) {
+                    // Show items that match the selected category
+                    item.style.display = 'block';
+                    
+                    // Add animation
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateY(0)';
+                    }, 50);
+                } else {
+                    // Hide items that don't match
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateY(20px)';
+                    
+                    // After animation completes, hide the element
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 300);
+                }
+            });
+        });
+    });
+    
+    // Initialize - Show all skills
+    filterButtons[0].click();
+});
+    </script>
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const projectCards = document.querySelectorAll('.project-card');
+
+    // Reveal all project cards with a staggered animation
+    projectCards.forEach((card, index) => {
+        setTimeout(() => {
+            card.classList.add('show');
+        }, index * 150); // Stagger animation
+    });
+});
+</script>
+
 </body>
 </html>
