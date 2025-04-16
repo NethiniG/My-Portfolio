@@ -1,0 +1,147 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f0f2f5"/>
+  
+  <!-- Header -->
+  <rect width="800" height="70" fill="#2c3e50"/>
+  <text x="30" y="45" font-family="Arial" font-size="24" fill="white" font-weight="bold">Plane Management System</text>
+  
+  <!-- Navigation Bar -->
+  <rect x="560" y="25" width="80" height="30" rx="5" fill="#3498db"/>
+  <text x="600" y="45" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Dashboard</text>
+  
+  <rect x="650" y="25" width="60" height="30" rx="5" fill="#3498db"/>
+  <text x="680" y="45" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Login</text>
+  
+  <rect x="720" y="25" width="60" height="30" rx="5" fill="#3498db"/>
+  <text x="750" y="45" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Help</text>
+  
+  <!-- Main Content -->
+  <rect x="20" y="90" width="760" height="490" rx="5" fill="white"/>
+  
+  <!-- Sidebar -->
+  <rect x="20" y="90" width="200" height="490" fill="#34495e"/>
+  
+  <!-- Sidebar Menu Items -->
+  <rect x="20" y="130" width="200" height="40" fill="#2980b9"/>
+  <text x="50" y="155" font-family="Arial" font-size="14" fill="white">Flight Schedule</text>
+  
+  <rect x="20" y="170" width="200" height="40" fill="#34495e"/>
+  <text x="50" y="195" font-family="Arial" font-size="14" fill="white">Aircraft Status</text>
+  
+  <rect x="20" y="210" width="200" height="40" fill="#34495e"/>
+  <text x="50" y="235" font-family="Arial" font-size="14" fill="white">Seat Reservations</text>
+  
+  <rect x="20" y="250" width="200" height="40" fill="#34495e"/>
+  <text x="50" y="275" font-family="Arial" font-size="14" fill="white">Passenger Management</text>
+  
+  <rect x="20" y="290" width="200" height="40" fill="#34495e"/>
+  <text x="50" y="315" font-family="Arial" font-size="14" fill="white">Reports</text>
+  
+  <rect x="20" y="330" width="200" height="40" fill="#34495e"/>
+  <text x="50" y="355" font-family="Arial" font-size="14" fill="white">Settings</text>
+  
+  <!-- Content Area -->
+  <text x="240" y="120" font-family="Arial" font-size="20" fill="#2c3e50" font-weight="bold">Flight Schedule Overview</text>
+  
+  <!-- Flight Status Table -->
+  <rect x="240" y="140" width="520" height="40" fill="#3498db"/>
+  <text x="265" y="165" font-family="Arial" font-size="14" fill="white">Flight No.</text>
+  <text x="365" y="165" font-family="Arial" font-size="14" fill="white">Departure</text>
+  <text x="465" y="165" font-family="Arial" font-size="14" fill="white">Arrival</text>
+  <text x="565" y="165" font-family="Arial" font-size="14" fill="white">Aircraft</text>
+  <text x="665" y="165" font-family="Arial" font-size="14" fill="white">Seats Available</text>
+  
+  <!-- Flight Rows -->
+  <rect x="240" y="180" width="520" height="40" fill="#ecf0f1"/>
+  <text x="265" y="205" font-family="Arial" font-size="14" fill="#2c3e50">FL-1234</text>
+  <text x="365" y="205" font-family="Arial" font-size="14" fill="#2c3e50">08:30 NYC</text>
+  <text x="465" y="205" font-family="Arial" font-size="14" fill="#2c3e50">11:45 LAX</text>
+  <text x="565" y="205" font-family="Arial" font-size="14" fill="#2c3e50">Boeing 737</text>
+  <text x="665" y="205" font-family="Arial" font-size="14" fill="#2c3e50">43</text>
+  
+  <rect x="240" y="220" width="520" height="40" fill="white"/>
+  <text x="265" y="245" font-family="Arial" font-size="14" fill="#2c3e50">FL-2345</text>
+  <text x="365" y="245" font-family="Arial" font-size="14" fill="#2c3e50">10:15 CHI</text>
+  <text x="465" y="245" font-family="Arial" font-size="14" fill="#2c3e50">13:20 MIA</text>
+  <text x="565" y="245" font-family="Arial" font-size="14" fill="#2c3e50">Airbus A320</text>
+  <text x="665" y="245" font-family="Arial" font-size="14" fill="#2c3e50">12</text>
+  
+  <rect x="240" y="260" width="520" height="40" fill="#ecf0f1"/>
+  <text x="265" y="285" font-family="Arial" font-size="14" fill="#2c3e50">FL-3456</text>
+  <text x="365" y="285" font-family="Arial" font-size="14" fill="#2c3e50">14:45 ATL</text>
+  <text x="465" y="285" font-family="Arial" font-size="14" fill="#2c3e50">16:30 DFW</text>
+  <text x="565" y="285" font-family="Arial" font-size="14" fill="#2c3e50">Boeing 787</text>
+  <text x="665" y="285" font-family="Arial" font-size="14" fill="#2c3e50">78</text>
+  
+  <!-- Seat Map Preview -->
+  <text x="240" y="330" font-family="Arial" font-size="18" fill="#2c3e50" font-weight="bold">Interactive Seat Map - Boeing 737</text>
+  
+  <!-- Plane Outline -->
+  <path d="M270,400 L290,380 L710,380 L730,400 L730,490 L700,520 L310,520 L270,490 Z" fill="#ecf0f1" stroke="#7f8c8d" stroke-width="2"/>
+  
+  <!-- Seats -->
+  <g id="seats">
+    <!-- First Class -->
+    <rect x="320" y="400" width="24" height="24" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <rect x="350" y="400" width="24" height="24" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <rect x="420" y="400" width="24" height="24" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+    <rect x="450" y="400" width="24" height="24" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <rect x="520" y="400" width="24" height="24" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <rect x="550" y="400" width="24" height="24" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <rect x="620" y="400" width="24" height="24" fill="#2ecc71" stroke="#27ae60" stroke-width="1"/>
+    <rect x="650" y="400" width="24" height="24" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    
+    <!-- Business Class -->
+    <rect x="320" y="430" width="24" height="24" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+    <rect x="350" y="430" width="24" height="24" fill="#2ecc71" stroke="#27ae60" stroke-width="1"/>
+    <rect x="420" y="430" width="24" height="24" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <rect x="450" y="430" width="24" height="24" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <rect x="520" y="430" width="24" height="24" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <rect x="550" y="430" width="24" height="24" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+    <rect x="620" y="430" width="24" height="24" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <rect x="650" y="430" width="24" height="24" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    
+    <!-- Economy Class Row 1 -->
+    <rect x="320" y="470" width="20" height="20" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <rect x="345" y="470" width="20" height="20" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <rect x="370" y="470" width="20" height="20" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+    <rect x="420" y="470" width="20" height="20" fill="#2ecc71" stroke="#27ae60" stroke-width="1"/>
+    <rect x="445" y="470" width="20" height="20" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <rect x="470" y="470" width="20" height="20" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <rect x="520" y="470" width="20" height="20" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <rect x="545" y="470" width="20" height="20" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+    <rect x="570" y="470" width="20" height="20" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <rect x="620" y="470" width="20" height="20" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <rect x="645" y="470" width="20" height="20" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <rect x="670" y="470" width="20" height="20" fill="#2ecc71" stroke="#27ae60" stroke-width="1"/>
+    
+    <!-- Economy Class Row 2 -->
+    <rect x="320" y="495" width="20" height="20" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <rect x="345" y="495" width="20" height="20" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+    <rect x="370" y="495" width="20" height="20" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <rect x="420" y="495" width="20" height="20" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <rect x="445" y="495" width="20" height="20" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <rect x="470" y="495" width="20" height="20" fill="#2ecc71" stroke="#27ae60" stroke-width="1"/>
+    <rect x="520" y="495" width="20" height="20" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+    <rect x="545" y="495" width="20" height="20" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <rect x="570" y="495" width="20" height="20" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <rect x="620" y="495" width="20" height="20" fill="#2ecc71" stroke="#27ae60" stroke-width="1"/>
+    <rect x="645" y="495" width="20" height="20" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <rect x="670" y="495" width="20" height="20" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+  </g>
+  
+  <!-- Legend -->
+  <rect x="240" y="535" width="20" height="20" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+  <text x="265" y="550" font-family="Arial" font-size="12" fill="#2c3e50">Available</text>
+  
+  <rect x="330" y="535" width="20" height="20" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+  <text x="355" y="550" font-family="Arial" font-size="12" fill="#2c3e50">Booked</text>
+  
+  <rect x="420" y="535" width="20" height="20" fill="#2ecc71" stroke="#27ae60" stroke-width="1"/>
+  <text x="445" y="550" font-family="Arial" font-size="12" fill="#2c3e50">Selected</text>
+  
+  <!-- Quick Action Button -->
+  <rect x="600" y="535" width="160" height="35" rx="5" fill="#e74c3c"/>
+  <text x="680" y="557" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Make Reservation</text>
+</svg>
